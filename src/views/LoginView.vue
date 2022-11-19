@@ -1,14 +1,45 @@
 <script setup>
-function logout() {
-  console.log("Logout")
-}
+import { RouterLink } from 'vue-router'
+import { reactive, onMounted } from 'vue'
+
+// onMounted(() => {
+//   const companyServices = reactive([
+//     {
+//       id: 1,
+//       title: 'Mudança residencial',
+//       description: 'Estamos preparados para fazer mudanças residenciais de casas ou apartamentos com eficiência e qualidade.'
+//     },
+//     {
+//       id: 2,
+//       title: 'Mudança comercial',
+//       description: 'Eficiente e discreto, esse é o serviço que buscamos oferecer para nossos clientes que desejam transportar mudanças comerciais.'
+//     },
+//     {
+//       id: 3,
+//       title: 'Içamento',
+//       description: 'Temos uma equipe preparda para realizar serviços de içamento com segurança.'
+//     },
+//     {
+//       id: 4,
+//       title: 'Guarda móveis',
+//       description: 'osso guarda-móveis é próprio para mudanças e tem segurança garantida, independente das necessidades do cliente.'
+//     },
+//   ])
+// })
+
 </script>
 
 <template>
   <div class="container">
-    <h2>Boas-vindas, Nome!</h2>
-    <strong>Aproveite todos os nossos serviços!</strong> <br />
-      <a href="/">Sair</a>
+    <h2>Boas-vindas!</h2>
+    <strong>Conheça os nossos serviços!</strong> <br />
+
+    <!-- <template v-if="services.length > 0">
+
+      <h3 v-for="service in services">{{ service.title }}</h3>
+    </template> -->
+
+    <RouterLink to="/">Sair</RouterLink>
   </div>
 </template>
 
@@ -20,6 +51,10 @@ function logout() {
   align-items: center;
 
   padding-right: 10rem;
+}
+
+h2 {
+  margin-bottom: 0.6rem;
 }
 
 a {

@@ -1,7 +1,21 @@
 <script setup>
 import { RouterLink } from 'vue-router'
+import { ref, reactive, onMounted } from 'vue' // ref: Para valores primitivos que serão alterados em tempo real
+
+const email = ref('')
+const password = ref('')
+
+const user = reactive({
+  email: '',
+  password: ''
+});
+
+onMounted(() => {
+  console.log
+})
+
 function login() {
-  console.log("Login")
+  console.log("Login");
 }
 </script>
 
@@ -12,12 +26,12 @@ function login() {
     <form @submit.prevent="login">
       <label>
         E-mail
-        <input type="text" placeholder="Digite seu e-mail" v-model="email" />
+        <input type="email" placeholder="Digite seu e-mail" autocomplete v-model="user.email" />
       </label>
 
       <label>
         Senha
-        <input type="password" placeholder="Digite sua senha" v-model="password" />
+        <input type="password" placeholder="Digite sua senha" v-model="user.password" />
       </label>
 
       <button type="submit">
