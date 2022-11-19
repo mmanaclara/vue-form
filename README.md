@@ -1,29 +1,32 @@
-# vue-basic
+<p align="center">
+  <h3>Vue.js | Formulário</h3>
+</p>
 
-This template should help get you started developing with Vue 3 in Vite.
+<p align="center">
+  <img alt="Visualização do site" src="./cover.png" width="100%">
+</p>
 
-## Recommended IDE Setup
+## 💻 Projeto
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Projeto desenvolvido em Vue.js. para colocar em prática conceitos básicos do framework. A aplicação consiste em criar duas rotas: início e a área do usuário logado. 
 
-## Customize configuration
+## ✨ Linguagens
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- HTML;
+- CSS;
+- Javascript;
+- Framework: Vue.js.
 
-## Project Setup
+## Utilização do projeto
 
-```sh
-npm install
-```
+### 💾 Baixar o projeto
+Faça o clone do repositório para ter uma versão do projeto em sua máquina:<br/>
+`$ git clone https://github.com/mmanaclara/vue-form.git`
 
-### Compile and Hot-Reload for Development
+### 🧰 Instalar dependências
+`$ npm install`  
 
-```sh
-npm run dev
-```
+### 🚀 Iniciar o projeto
+`$ npm run dev`
 
-### Compile and Minify for Production
 
-```sh
-npm run build
-```
